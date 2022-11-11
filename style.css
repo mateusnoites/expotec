@@ -5,16 +5,28 @@ body {
     padding: 0;
 
     height: 10000px;
+
+    background: #820085;
+    font-family: 'Jaldi', sans-serif;
 }
 
 header {
-    background-image:  url("./bg.png"), linear-gradient(to right, rgb(183, 0, 255), rgb(108, 0, 180));
+    z-index: 10;
+    background-image:  url("./bg.png"), linear-gradient(to right, rgb(126, 0, 88), rgb(108, 0, 180));
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 25%;
+    height: 28%;
 
     position: fixed;
+}
+
+.header1 {
+    margin-right: 39px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
 }
 
 #logo {
@@ -28,7 +40,134 @@ a {
 }
 
 ul {
+    font-size: 16px;
     display: flex;
     list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.caixaDePesquisa {
+    position: relative;
+    top: 49px;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    height: 52px;
+    background-color: white;
+    justify-content: space-between;
+
+    align-items: center;
+
+
+    border-radius: 10px;
+}
+
+.busca, .seta {
+    margin-left: 23px;
+    margin-right: 23px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.pesquisa {
     font-family: 'Jaldi', sans-serif;
+    border: none;
+    font-size: 16pt;
+    width: 800px;
+    height: 48px;
+    outline: none;
+}
+
+.secao1 {
+    position: relative;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: auto;
+    display:grid;
+    grid-template-columns: 467px 467px;
+    grid-column-gap: 33px;
+    grid-row-gap: 40px;
+}
+
+.nemIdeia {
+    flex: 50%;
+    background-color: white;
+    height: 245px;
+    border-radius: 15px;
+    flex: 2 2;
+    margin: 10px;
+}
+
+.agendaCultural {
+    background-color: #FBE62F;
+    width: 100%;
+    height: 249px;
+    position: absolute;
+    top: 100%;
+    font-size: 148px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.53);
+}
+
+.secao2 {
+    position: relative;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.palestrante {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.p1 {
+    background-image: url("./pessoa14.png");
+}
+
+.p2 {
+    background-image: url("./pessoa2.png");
+}
+
+.p3 {
+    background-image: url("./pessoa3.png");
+}
+
+.p4 {
+    background-image: url("./pessoa14.png");
+}
+
+.p5 {
+    background-image: url("./pessoa4.png");
+}
+
+.p6 {
+    background-image: url("./pessoa5.png");
+}
+
+.palestrantes {
+    margin: auto;
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 53px;
+    grid-row-gap: 78px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-image:  url("./bg.png"), linear-gradient(to right, rgb(126, 0, 88), rgb(108, 0, 180));
 }

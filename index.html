@@ -7,17 +7,60 @@
     <link rel="stylesheet" href="./style.css">
     <title>Expotec</title>
 </head>
-<body>
+<body onload="buscaAleatoria()">
     <header>
-        <img src="./logo.png" alt="Expotec" id="logo">
 
-        <ul>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Programação</a></li>
-            <li><a href="#">Palestrantes</a></li>
-            <li><a href="#">Agenda Cultural</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+        <div class="header1">
+            <a href="#"><img src="./logo.png" alt="Expotec" id="logo"></a>
+    
+            <ul>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Programação</a></li>
+                <li><a href="#">Palestrantes</a></li>
+                <li><a href="#">Agenda Cultural</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="caixaDePesquisa">            
+            <img src="./buscar.png" alt="Pesquisar" class="busca">
+            <form>
+                <input type="text" class="pesquisa" autofocus="true" id="pesquisa" placeholder="Pesquise aqui...">
+            </form>
+            <button onclick="alert('botao clicado')"><img src="./baixar.png" alt="Seta" class="seta"></button>
+        </div>
     </header>
+
+    <main>
+        <section class="secao1">
+            <section class="container">
+                <div class="nemIdeia"></div>
+                <div class="nemIdeia"></div>
+                <div class="nemIdeia"></div>
+                <div class="nemIdeia"></div>
+            </section>
+        </section>
+
+        <div class="agendaCultural">Agenda Cultural</div>
+
+        <section class="secao2">
+            <section class="palestrantes">
+                <div class="p1 palestrante"></div>
+                <div class="p2 palestrante"></div>
+                <div class="p3 palestrante"></div>
+                <div class="p4 palestrante"></div>
+                <div class="p5 palestrante"></div>
+                <div class="p6 palestrante"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./footer0.png" alt="Expotec">
+        <img src="./footer1.png" alt="Direx">
+        <img src="./footer2.png" alt="IF Logo">
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
